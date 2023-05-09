@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "target": "ES2015",
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "useDefineForClassFields": false,
+    "lib": ["DOM", "DOM.Iterable", "ESNext", "ScriptHost"],
+    "types": ["reflect-metadata", "node", "jest"],
+    "paths": {},
+    "typeRoots": ["./node_modules/@types", "types"]
+  },
+  "include": ["./src/**/*.ts", "./test/**/*.ts", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "**/tests/**/*"]
+}
