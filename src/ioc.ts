@@ -23,9 +23,8 @@ import type {
  * @time 2023.03.31 20:09:57
  */
 export class Container {
-  constructor(options: ContainerOptions = { enableDependencyInstanceCache: true, dependencyInstanceInjectMethod: 'Property' }) {
+  constructor(options: ContainerOptions = { dependencyInstanceInjectMethod: 'Property' }) {
     // 初始化ContainerOptions
-    ContainerConstant.Container_CacheServiceInstance_Enabled = options.enableDependencyInstanceCache ?? true;
     ContainerConstant.Container_DependencyInjectMethod = options.dependencyInstanceInjectMethod ?? 'Property';
     // 初始化Container内部使用的实例缓存
     ContainerConstant.ServiceCtorStoreInstance.clear();

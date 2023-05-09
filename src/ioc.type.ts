@@ -17,6 +17,5 @@ export interface ServiceCtorStoreInstanceItem {
   scope: DependencyInjectScope;
 }
 export interface ContainerOptions {
-  enableDependencyInstanceCache?: boolean;
   dependencyInstanceInjectMethod?: 'Property' | 'Getter';
 }

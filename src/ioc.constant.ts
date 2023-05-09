@@ -11,7 +11,7 @@ export class ContainerConstant {
   public static readonly ServiceCtorStoreInstance = new Map<ServiceUniqueId, ServiceCtorStoreInstanceItem>();
 
   // new Container(options) Options参数信息
-  public static Container_CacheServiceInstance_Enabled = true; // 是否开启缓存，开启之后能够在第二次获取服务时直接返回缓存的实例 且 未处于Container管理的模块下也能够正常使用
+  // public static Container_CacheServiceInstance_Enabled = true; // 是否开启缓存，开启之后能够在第二次获取服务时直接返回缓存的实例 且 未处于Container管理的模块下也能够正常使用
   public static Container_DependencyInjectMethod: 'Property' | 'Getter' = 'Property'; // 依赖注入的方式，Property表示通过属性注入，Getter表示通过Getter注入
 
   // Reflect默认的元数据key

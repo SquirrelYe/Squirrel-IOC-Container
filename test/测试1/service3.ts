@@ -9,8 +9,7 @@ export default class Service3 {
   // @Inject('1') readonly service1: Service1;
   // @Inject('2') readonly service2: Service2;
 
-  constructor() // @Inject('2') readonly service2: Service2, // @Inject('1') readonly service1: Service1,
-  // @Inject(ContainerConstant.IOC_INTERNAL_SERVICE_ID) readonly serviceInternal: Container
+  constructor() // @Inject(ContainerConstant.IOC_INTERNAL_SERVICE_ID) readonly serviceInternal: Container // @Inject('2') readonly service2: Service2, // @Inject('1') readonly service1: Service1,
   {}
 
   test() {
