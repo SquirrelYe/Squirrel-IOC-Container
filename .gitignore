@@ -6,6 +6,3 @@ node_modules
 yarn.lock
 package-lock.json
 pnpm-lock.yaml
-
-# 忽略任意 dist 目录
-dist
