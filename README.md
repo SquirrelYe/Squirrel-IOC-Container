@@ -4,11 +4,11 @@
 
 ## 轻松掌握依赖注入——Squirrel IOC Container
 
-🐿️ 大家好呀！今天我要来介绍一个非常好用的 TS IOC 容器库，它的名字叫做 Squirrel IOC Container。 🌰
-💻 如果你是一名 Web 开发者，那么你一定知道依赖注入（DI）在程序设计中的重要性。而 Squirrel IOC Container 就是为了方便我们进行依赖注入的工具之一。 👨‍💻
-👍 这个库使用简单，代码清晰易懂，可以帮助我们更加灵活地管理各种依赖关系。它还提供了自动注入、循环依赖解决、命名空间功能等多种特性。 🤩
-📚 如果你想深入了解 Squirrel IOC Container 和依赖注入的相关知识，它的 GitHub 页面上有详细的文档和示例代码供你参考。 😎
-👉 所以，如果你正在寻找一款高效易用的 IOC 容器库，不妨试试 Squirrel IOC Container 吧！ 🐿️
+- 🐿️ 大家好呀！今天我要来介绍一个非常好用的 TS IOC 容器库，它的名字叫做 Squirrel IOC Container。 🌰
+- 💻 如果你是一名 Web 开发者，那么你一定知道依赖注入（DI）在程序设计中的重要性。而 Squirrel IOC Container 就是为了方便我们进行依赖注入的工具之一。 👨‍💻
+- 👍 这个库使用简单，代码清晰易懂，可以帮助我们更加灵活地管理各种依赖关系。它还提供了自动注入、循环依赖解决、命名空间功能等多种特性。 🤩
+- 📚 如果你想深入了解 Squirrel IOC Container 和依赖注入的相关知识，它的 GitHub 页面上有详细的文档和示例代码供你参考。 😎
+- 👉 所以，如果你正在寻找一款高效易用的 IOC 容器库，不妨试试 Squirrel IOC Container 吧！ 🐿️
 
 ## 介绍
 
