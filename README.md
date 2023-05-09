@@ -9,6 +9,7 @@
 1. 依赖标记
 
    ①. 目前提供了：**@Component**，**@Service**，**@Controller**，**@Repository** 四种类装饰器标记，标记之后即可在容器中获取到实例（支持 **具名/无名** 标记，无名默认按照类型小写注入）；
+   
    ②. 注：@Component('ID') 为通用的 Component 装饰器，用于标识一个类为 Component，Service、Controller、Repository 都是 Component 的拓展实现。
 
 2. 依赖注入：**@Inject** 装饰器注入，支持 **Constructor** 注入和 **Property** 注入（注：Constructor 注入仅支持具名模块注入）；
