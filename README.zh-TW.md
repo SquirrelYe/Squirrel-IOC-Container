@@ -11,7 +11,15 @@
   <a href="README.en-US.md">English</a> 
 </p>
 
-🎉 Squirrel IOC Container (Dependency Inject) 是一款基于 TypeScript 实现的 IoC 容器库。它可以帮助开发者更好地管理依赖注入，降低代码之间的耦合度，提高代码的可维护性。Squirrel IOC Container 提供了一个简单易用的 API，可以轻松地实现依赖注入和控制反转。如果您正在寻找一款高效、易用的 IoC 容器库，那么 Squirrel IOC Container 绝对是您的不二之选。
+🎉 Squirrel IOC Container (Dependency Inject) 是一款基於TypeScript 實現的IoC 容器庫。它可以幫助開發者更好地管理依賴注入，降低代碼之間的耦合度，提高代碼的可維護性。Squirrel IOC Container 提供了一個簡單易用的API，可以輕鬆地實現依賴注入和控制反轉。如果您正在尋找一款高效、易用的IoC 容器庫，那麼Squirrel IOC Container 絕對是您的不二之選。
+
+## 輕鬆掌握依賴注入——Squirrel IOC Container 
+
+- 🐿️ 大家好呀！今天我要來介紹一個非常好用的TS IOC 容器庫，它的名字叫做Squirrel IOC Container。🌰 
+- 💻 如果你是一名Web 開發者，那麼你一定知道依賴注入（DI）在程序設計中的重要性。而Squirrel IOC Container 就是為了方便我們進行依賴注入的工具之一。👨‍💻 
+- 👍 這個庫使用簡單，代碼清晰易懂，可以幫助我們更加靈活地管理各種依賴關係。它還提供了自動注入、循環依賴解決、命名空間功能等多種特性。🤩 
+- 📚 如果你想深入了解Squirrel IOC Container 和依賴注入的相關知識，它的GitHub 頁面上有詳細的文檔和示例代碼供你參考。😎 
+- 👉 所以，如果你正在尋找一款高效易用的IOC 容器庫，不妨試試Squirrel IOC Container 吧！🐿️ 
 
 ## 轻松掌握依赖注入——Squirrel IOC Container
 
@@ -21,18 +29,19 @@
 - 📚 如果你想深入了解 Squirrel IOC Container 和依赖注入的相关知识，它的 GitHub 页面上有详细的文档和示例代码供你参考。 😎
 - 👉 所以，如果你正在寻找一款高效易用的 IOC 容器库，不妨试试 Squirrel IOC Container 吧！ 🐿️
 
-## 介绍
+## 介紹
 
-目前已经实现的功能有：
+目前已經實現的功能有：
 
-1. 依赖标记：目前提供了：**@Component**，**@Service**，**@Controller**，**@Repository** 四种类装饰器标记，标记之后即可在容器中获取到实例（支持 **具名/无名** 标记，无名默认按照类型小写注入）；`注：@Component('ID') 为通用的 Component 装饰器，用于标识一个类为 Component，Service、Controller、Repository 都是 Component 的拓展实现`。
-2. 依赖注入：**@Inject** 装饰器注入，支持 **Constructor** 注入和 **Property** 注入（注：Constructor 注入仅支持具名模块注入）；
-3. 注入方法：支持配置选择注入方式，目前支持 **Property** 和 **Getter** 注入（ **dependencyInstanceInjectMethod** 配置项）；
-4. 循环依赖检测：在初始化容器时、加载实例时会 **检测循环依赖** ，如果存在循环依赖则会抛出异常；
-5. 完备的异常检测：**ServiceInjectableException, CyclicDependencyException, ServiceNotFoundException, ServiceAlreadyRegisteredException, InjectWithoutNameException**；
-6. 代理自身容器实例：在容器中 **注入自身容器实例** ，可以通过容器实例获取到其他服务实例；
-7. 作用域注入：支持单例注入 **@Scope('Singleton')** 和每次注入 **@Scope('Prototype')** 两种模式，默认为单例注入；
-8. 生命周期注入：支持 **@PostConstruct** 在服务实例化之后执行，能够绑定到多个方法上并按照定义的顺序依次执行；
+1. 依賴標記：目前提供了：**@Component**，**@Service**，**@Controller**，**@Repository** 四種類裝飾器標記，標記之後即可在容器中獲取到實例（支持**具名/無名** 標記，無名默認按照類型小寫注入）；`注：@Component('ID') 為通用的Component 裝飾器，用於標識一個類為Component，Service、Controller、Repository 都是Component 的拓展實現`。
+2. 依賴注入：**@Inject** 裝飾器注入，支持**Constructor** 注入和**Property** 注入（注：Constructor 注入僅支持具名模塊注入）；
+3. 注入方法：支持配置選擇注入方式，目前支持**Property** 和**Getter** 注入（ **dependencyInstanceInjectMethod** 配置項）；
+4. 循環依賴檢測：在初始化容器時、加載實例時會**檢測循環依賴** ，如果存在循環依賴則會拋出異常；
+5. 完備的異常檢測：**ServiceInjectableException, CyclicDependencyException, ServiceNotFoundException, ServiceAlreadyRegisteredException, InjectWithoutNameException**；
+6. 代理自身容器實例：在容器中**注入自身容器實例** ，可以通過容器實例獲取到其他服務實例；
+7. 作用域注入：支持單例注入**@Scope('Singleton')** 和每次注入**@Scope('Prototype')** 兩種模式，默認為單例注入； 
+  @Inject() readonly service3: Service3; // 注入無名屬性
+8. 生命週期注入：支持**@PostConstruct** 在服務實例化之後執行，能夠綁定到多個方法上並按照定義的順序依次執行；
 
 ## 使用方法
 
@@ -56,20 +65,20 @@ class Service2 {
 
 @Service()
 class Service1 {
-  @Inject() readonly service3: Service3; // 属性注入无名服务
-  constructor(@Inject('ServiceIdentifier2') readonly service2: Service2) {} // 构造函数注入具名服务
+  @Inject() readonly service3: Service3; // 注入無名屬性
+  constructor(@Inject('ServiceIdentifier2') readonly service2: Service2) {} // 構造函數注入具名屬性
 }
 
-// 创建代理容器实例
+// 創建代理容器實例
 const IocContainer = new Container({ dependencyInstanceInjectMethod: 'Property' });
-IocContainer.init(); // 初始化IOC容器，此方法会自动初始化所有已注册的服务并且执行一次循环检测，方便开发者在开发阶段发现循环依赖问题
+IocContainer.init(); // 初始化IOC容器，此方法會自動初始化所有已註冊的服務並且執行一次循環檢測，方便開發者在開發階段發現循環依賴問題
 
-// 测试测试实例
+// 測試實例
 @Service('TestService')
 @InjectType('Constructor')
 class Test {
-  @Inject(ContainerConstant.IOC_INTERNAL_SERVICE_ID) public readonly serviceInternal: Container; // 注入代理容器实例
-  @Inject() private readonly service1: Service1; // 无名属性注入
+  @Inject(ContainerConstant.IOC_INTERNAL_SERVICE_ID) public readonly serviceInternal: Container; // 注入代理容器實例
+  @Inject() private readonly service1: Service1; // 無名屬性注入
 
   constructor(public readonly Prop1: string) {}
 
@@ -80,7 +89,7 @@ class Test {
   }
 }
 
-// 执行测试
+// 執行測試
 const TestServiceConstructor = IocContainer.getService<typeof Test>('TestService');
 const TestServiceInstance = new TestServiceConstructor('Prop From IOC Container Constructor');
 TestServiceInstance.test();

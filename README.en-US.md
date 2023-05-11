@@ -55,20 +55,20 @@ class Service2 {
 
 @Service()
 class Service1 {
-  @Inject() readonly service3: Service3; // 注入无名属性
-  constructor(@Inject('ServiceIdentifier2') readonly service2: Service2) {} // 构造函数注入具名属性
+  @Inject() readonly service3: Service3; // inject nameless property
+  constructor(@Inject('ServiceIdentifier2') readonly service2: Service2) {} // injects named properties - Constructor
 }
 
-// 创建代理容器实例
+// create proxy container instance
 const IocContainer = new Container({ dependencyInstanceInjectMethod: 'Property' });
-IocContainer.init(); // 初始化IOC容器，此方法会自动初始化所有已注册的服务并且执行一次循环检测，方便开发者在开发阶段发现循环依赖问题
+IocContainer.init(); // Initialize the IOC container, this method will automatically initialize all registered services and perform a cycle detection, which is convenient for developers to find circular dependency problems during the development phase.
 
-// 测试实例
+// test instance
 @Service('TestService')
 @InjectType('Constructor')
 class Test {
-  @Inject(ContainerConstant.IOC_INTERNAL_SERVICE_ID) public readonly serviceInternal: Container; // 注入代理容器实例
-  @Inject() private readonly service1: Service1; // 无名属性注入
+  @Inject(ContainerConstant.IOC_INTERNAL_SERVICE_ID) public readonly serviceInternal: Container; // Inject proxy container instance
+  @Inject() private readonly service1: Service1; // Anonymous attribute injection
 
   constructor(public readonly Prop1: string) {}
 
@@ -79,7 +79,7 @@ class Test {
   }
 }
 
-// 执行测试
+// execute the test
 const TestServiceConstructor = IocContainer.getService<typeof Test>('TestService');
 const TestServiceInstance = new TestServiceConstructor('Prop From IOC Container Constructor');
 TestServiceInstance.test();
