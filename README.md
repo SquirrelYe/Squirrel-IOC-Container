@@ -37,7 +37,6 @@
 ## 使用方法
 
 ```typescript
-// Path: src/ioc/container.ts
 import { Service, Inject, InjectType, Container, ContainerConstant } from '@squirreljs/squirre-ioc-container';
 
 @Service()
@@ -56,15 +55,15 @@ class Service2 {
 
 @Service()
 class Service1 {
-  @Inject() readonly service3: Service3; // 属性注入无名服务
-  constructor(@Inject('ServiceIdentifier2') readonly service2: Service2) {} // 构造函数注入具名服务
+  @Inject() readonly service3: Service3; // 注入无名属性
+  constructor(@Inject('ServiceIdentifier2') readonly service2: Service2) {} // 构造函数注入具名属性
 }
 
 // 创建代理容器实例
 const IocContainer = new Container({ dependencyInstanceInjectMethod: 'Property' });
 IocContainer.init(); // 初始化IOC容器，此方法会自动初始化所有已注册的服务并且执行一次循环检测，方便开发者在开发阶段发现循环依赖问题
 
-// 测试测试实例
+// 测试实例
 @Service('TestService')
 @InjectType('Constructor')
 class Test {
