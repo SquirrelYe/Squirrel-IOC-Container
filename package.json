@@ -1,6 +1,6 @@
 {
   "name": "@squirreljs/squirre-ioc-container",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "🐿️ Squirrel IOC Container is an IoC container library based on TypeScript. It can help developers better manage dependency injection, reduce the coupling between code, and improve code maintainability. Squirrel IOC Container provides a simple and easy-to-use API that can easily implement dependency injection and inversion of control.",
   "repository": {
     "type": "git",
@@ -28,6 +28,11 @@
   "files": [
     "dist"
   ],
+  "keywords": ["Squirrel", "TypeScript", "IOC", "DI", "IoC Container", "Dependency Injection", "Inversion of Control"],
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0",
+    "typescript": "^4.4.4"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "dev": "tsc -b -w",
