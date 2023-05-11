@@ -7,6 +7,10 @@
 
 🎉 Squirrel IOC Container (Dependency Inject) 是一款基于 TypeScript 实现的 IoC 容器库。它可以帮助开发者更好地管理依赖注入，降低代码之间的耦合度，提高代码的可维护性。Squirrel IOC Container 提供了一个简单易用的 API，可以轻松地实现依赖注入和控制反转。如果您正在寻找一款高效、易用的 IoC 容器库，那么 Squirrel IOC Container 绝对是您的不二之选。
 
+- [简体中文](./README.md)
+- [繁體中文](./README.zh-TW.md)
+- [English](./README.en-US.md)
+
 ## 轻松掌握依赖注入——Squirrel IOC Container
 
 - 🐿️ 大家好呀！今天我要来介绍一个非常好用的 TS IOC 容器库，它的名字叫做 Squirrel IOC Container。 🌰
