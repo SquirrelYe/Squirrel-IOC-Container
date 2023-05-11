@@ -27,7 +27,7 @@
 
 ```typescript
 // Path: src/ioc/container.ts
-import { Service, Inject, InjectType, Container, ContainerConstant } from '@squirrel/squirre-ioc-container';
+import { Service, Inject, InjectType, Container, ContainerConstant } from '@squirreljs/squirre-ioc-container';
 
 @Service()
 class Service3 {
