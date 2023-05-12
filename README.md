@@ -7,7 +7,7 @@
 
 <!-- Logo -->
 <p align="center">
-  <a href="" target="blank"><img src="./assets/logo.jpeg" width="200" alt="Squirrel IOC Container Logo" /></a>
+  <a href="" target="blank"><img src="./assets/logo.jpeg" width="350" alt="Squirrel IOC Container Logo" /></a>
 </p>
 
 <p align="center">
