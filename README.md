@@ -5,6 +5,11 @@
   <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/@squirreljs/squirre-ioc-container.svg" alt="node compatibility"></a>
 </p>
 
+<!-- Logo -->
+<p align="center">
+  <a href="" target="blank"><img src="./assets/logo.jpeg" width="200" alt="Squirrel IOC Container Logo" /></a>
+</p>
+
 <p align="center">
   <a href="README.md">简体中文</a> | 
   <a href="README.zh-TW.md">繁體中文</a> | 
