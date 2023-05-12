@@ -1,5 +1,6 @@
 # Squirrel IOC Container
 
+<!-- Version -->
 <p align="left">
   <a href="https://npmjs.com/package/vite"><img src="https://img.shields.io/npm/v/@squirreljs/squirre-ioc-container.svg" alt="npm package"></a>
   <a href="https://nodejs.org/en/about/releases/"><img src="https://img.shields.io/node/v/@squirreljs/squirre-ioc-container.svg" alt="node compatibility"></a>
@@ -10,6 +11,7 @@
   <a href="" target="blank"><img src="./assets/logo.jpeg" width="350" alt="Squirrel IOC Container Logo" /></a>
 </p>
 
+<!-- Language -->
 <p align="center">
   <a href="README.md">简体中文</a> | 
   <a href="README.zh-TW.md">繁體中文</a> | 
