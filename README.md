@@ -92,6 +92,10 @@ const TestServiceInstance = new TestServiceConstructor('Prop From IOC Container 
 TestServiceInstance.test();
 ```
 
+## 数据统计
+
+[![Star History Chart](https://api.star-history.com/svg?repos=SquirrelYe/Squirrel-IOC-Container&type=Timeline)](https://star-history.com/#SquirrelYe/Squirrel-IOC-Container&Timeline)
+
 ## License
 
 SquirrelJS © 2023 - [MIT License](LICENSE)
